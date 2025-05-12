@@ -12,9 +12,8 @@ body {
 }
 
 .container {
-  position: absolute;
+  position: relative;
   width: 50%;
-  min-width: 580px;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
@@ -31,6 +30,7 @@ body {
 h2 {
   font-size: 24px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 h3 {
@@ -84,4 +84,17 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+/* Media Queries for small screens */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  input[type="number"] {
+    width: 50px;
+    padding: 10px 0;
+    font-size: 18px;
+  }
 }
